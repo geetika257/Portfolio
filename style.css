@@ -230,7 +230,7 @@ a {
 
 /* personal section */
 #personal {
-    background-image: url('../img1.jpg');
+    background-image: url('img1.jpg');
     background-position: top center;
     background-size: cover;
     position: relative;
