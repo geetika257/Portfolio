@@ -230,7 +230,7 @@ a {
 
 /* personal section */
 #personal {
-    background-image: url('img1.jpg');
+    background-image: url('../img1.jpg');
     background-position: top center;
     background-size: cover;
     position: relative;
@@ -255,13 +255,13 @@ a {
     padding: 0px 50px;
     margin: 0px auto;
     justify-content: flex-start;
-    /* padding-top: 300px; */
+    padding-top: 300px;
 }
 
 #personal h1 {
     display: block;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: transparent;
     position: relative;
     animation: text_reveal 0.5s ease forwards;
@@ -327,7 +327,7 @@ a {
     text-align: center;
 }
 
-#services .service-top{
+#services .section-top{
     width: 500px;
     margin: 0 auto;
 }
@@ -441,13 +441,15 @@ a {
 
 #projects .project-info h1{
     font-size: 2.5rem ;
-    font-weight: 500;
+    font-weight: 900;
     margin-bottom: 10px;
 }
 
 #projects .project-info h2{
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 800;
+    color: white;
+    padding-bottom: 3%;
 }
 
 #projects .project-img{
@@ -482,38 +484,49 @@ a {
 #about .about{
     display: flex;
     flex-direction:column-reverse ;
+    text-align: center;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 100px 20px;
 }
 
 #about .col-left{
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 450px;
 }
 
 #about .col-right{
     width: 100%;
 }
 
+#about .col-right .section-title{
+    margin-top: -50px;
+}
+
 #about .col-right h2{
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
+    margin-bottom: 10px;
 }
 
 #about .col-right p{
     margin-bottom: 20px;
+    text-align: left;
+    /* margin-top: -300px; */
 }
 
 #about .col-right .btn{
     font-size: 1.2rem ;
+    margin-bottom: 25px;
 }
 
 #about .col-left .about-img{
-    box-shadow: -9px -9px 5px darksalmon;
+    box-shadow: -9px -5px 5px darksalmon;
+    min-height: 100%;
+    min-width: 50%;
 }
 
 /* Contact section */
@@ -575,7 +588,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20px;
+    height: 10px;
     margin-top: -300px;
 }
 
@@ -694,6 +707,7 @@ a {
 }
 
 /* Media Query for tablet */
+
 @media only screen and (min-width: 768px) {
     .btn{
         font-size: 2.5rem;
@@ -707,21 +721,26 @@ a {
     #personal .h1{
         font-size: 7rem;
     }
-
-    #services .service-bottom .service-item{
+    
+    #services .section-bottom .section-item{
         flex-basis: 45%;
-        margin: 2.5;
+        margin: 2.5%;
     }
 
     #projects .project-item{
         flex-direction: row;
-    }
-
-    #projects .project-item{
         height: 400px;
         width: 100%;
         margin: 0;
         border-radius: 0;
+    }
+
+    #projects .all-projects .project-info{
+        height: 100%;
+    }
+
+    #projects .all-projects .project-img{
+        height: 100%;
     }
 
     #projects .project-item:nth-child(even){
@@ -742,25 +761,35 @@ a {
     }
 
     #about .col-left{
-        height: 600px;
-        width: 400px;
+        height: 700px;
+        width: 600px;
         padding-left: 60px;
     }
 
     #about .about .col-left .about-img ::after{
         left: -45px;
-        top: 20px;
-        height: 90%;
-        width: 80;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        
     }
 
     #about .col-right{
-        text-align: left;
+        text-align: center;
         padding: 30px;
     }
 
     #about .col-right h1{
-        text-align: left;
+        text-align: center;
+    }
+
+    #contact .section-title{
+       position: relative;
+       padding-top: 10%;
+    }
+
+    #contact .contact-info p{
+        text-align: center;
     }
 
     }
@@ -794,3 +823,4 @@ a {
         margin: 1.5%;
     }
 }  
+
